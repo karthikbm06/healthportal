@@ -1,0 +1,107 @@
+/* src/components/SignUp.css */
+
+/* General styles */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  font-family: 'Roboto', sans-serif;
+  background: white; /* White background */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+/* Container styles */
+.signup-container {
+  height: 100vh; /* Full viewport height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent; /* Transparent to let the background show */
+}
+
+.signup-box {
+  background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+  padding: 3rem;
+  border-radius: 12px; /* More rounded corners */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transform and shadow animation */
+  width: 100%; /* Make the box full width */
+  max-width: 450px; /* Optional: Limit the max width */
+  text-align: center;
+  backdrop-filter: blur(10px); /* Glassmorphism effect */
+}
+
+.signup-box:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+  box-shadow: 0 6px 30px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+/* Typography */
+h1 {
+  font-size: 2.5rem;
+  color: #333; /* Dark text color */
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+h1 span {
+  color: #ff7e5f; /* Highlighted part of the title */
+}
+
+/* TextField styles */
+.MuiTextField-root {
+  margin-bottom: 20px; /* Space between fields */
+  width: 100%;
+}
+
+.MuiOutlinedInput-root {
+  border-radius: 8px; /* Rounded corners for inputs */
+  transition: border-color 0.3s ease; /* Smooth border color transition */
+}
+
+.MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline {
+  border-color: #ff7e5f; /* Change border color on hover */
+}
+
+.MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+  border-color: #ff7e5f; /* Focused border color */
+}
+
+/* Button styles */
+.MuiButton-root {
+  background-color: #ff7e5f; /* Primary color */
+  color: white; /* White text color */
+  border-radius: 8px; /* Rounded corners */
+  padding: 12px;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth background color and transform transition */
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for the button */
+}
+
+.MuiButton-root:hover {
+  background-color: #feb47b; /* Lighter shade on hover */
+  transform: translateY(-3px); /* Lift effect on hover */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+/* Error message styles */
+.error {
+  color: red; /* Red color for error messages */
+  text-align: center; /* Center error messages */
+  margin-top: 10px; /* Space above error messages */
+  animation: fadeIn 0.5s ease; /* Fade-in effect for error messages */
+}
+
+/* Animation for error messages */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(-10px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}

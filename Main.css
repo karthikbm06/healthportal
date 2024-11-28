@@ -1,0 +1,120 @@
+/* General Styles */
+body {
+  font-family: 'Roboto', sans-serif; /* Modern font */
+  background-color: #f4f7fa; /* Soft background color */
+  margin: 0;
+  padding: 0;
+}
+
+/* Main Section Styles */
+.main-section {
+  padding: 40px;
+  text-align: center;
+  background-color: #ffffff; /* White background for main section */
+  border-radius: 12px; /* Rounded corners */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Enhanced shadow for depth */
+  margin: 40px auto; /* Center the section with margin */
+  max-width: 900px; /* Limit the width for better readability */
+  transition: transform 0.3s ease-in-out; /* Smooth transform effect */
+  opacity: 0; /* Start with hidden opacity */
+  animation: slideIn 0.5s forwards; /* Slide-in animation */
+}
+
+/* Slide-in Animation */
+@keyframes slideIn {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.main-section:hover {
+  transform: translateY(-5px); /* Slight lift effect on hover */
+}
+
+/* Title Styles */
+.main-title {
+  font-size: 32px; /* Larger font size for title */
+  color: #2c3e50; /* Darker color for better readability */
+  margin-bottom: 20px; /* Space below the title */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Subtle text shadow */
+}
+
+/* Button Container Styles */
+.button-container {
+  margin-top: 30px; /* Increased margin for spacing */
+  display: flex; /* Use flexbox for button alignment */
+  justify-content: center; /* Center the buttons */
+  flex-wrap: wrap; /* Allow buttons to wrap on smaller screens */
+}
+
+/* Button Styles */
+.main-button {
+  padding: 12px 24px; /* Increased padding for a more substantial button */
+  margin: 10px;
+  font-size: 16px;
+  color: white;
+  background: linear-gradient(135deg, #007bff, #0056b3); /* Gradient background */
+  border: none;
+  border-radius: 6px; /* Rounded corners */
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s, box-shadow 0.3s; /* Transition effects */
+  box-shadow: 0 4px 8px rgba(0, 123, 255, 0.3); /* Shadow for buttons */
+  opacity: 0; /* Start with hidden opacity */
+  animation: buttonSlideIn 0.5s forwards; /* Slide-in animation for buttons */
+}
+
+/* Button Slide-in Animation */
+@keyframes buttonSlideIn {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.main-button:hover {
+  background: linear-gradient(135deg, #0056b3, #007bff); /* Reverse gradient on hover */
+  transform: translateY(-3px); /* Lift effect on hover */
+  box-shadow: 0 6px 12px rgba(0, 123, 255, 0.4); /* Deeper shadow on hover */
+}
+
+/* Info Container Styles */
+.info-container {
+  padding: 20px;
+  background-color: #ffffff; /* White background for info containers */
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin: 20px 0;
+  transition: transform 0.3s ease-in-out; /* Smooth transform effect */
+  opacity: 0; /* Start with hidden opacity */
+  animation: fadeIn 0.5s forwards; /* Fade-in animation */
+}
+
+/* Fade-in Animation for Info Container */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.info-container:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+}
+
+.info-container h2 {
+  font-size: 26px; /* Slightly larger font size for headings */
+  color: #2c3e;
+}

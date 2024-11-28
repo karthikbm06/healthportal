@@ -1,0 +1,127 @@
+/* General Styles */
+body {
+  font-family: 'Roboto', sans-serif; /* Modern font */
+  background-color: #f4f7fa; /* Soft background color */
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+/* Home Container */
+.home-container {
+  height: 100vh; /* Full height of the viewport */
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  align-items: center; /* Center elements horizontally */
+  justify-content: center; /* Center elements vertically */
+  text-align: center; /* Center text */
+}
+
+/* Header Styles */
+.header {
+  background-color: #2c3e50; /* Dark background for header */
+  padding: 20px; /* Padding for header */
+  width: 100%; /* Full width */
+  position: fixed; /* Fixed header */
+  top: 0; /* Stick to the top */
+  z-index: 1000; /* Ensure it stays above other content */
+}
+
+/* Navigation Links */
+.nav-links {
+  list-style-type: none; /* Remove bullet points */
+  display: flex; /* Display links in a row */
+  justify-content: center; /* Center the links */
+}
+
+.nav-links li {
+  margin: 0 15px; /* Space between links */
+  color: white; /* White text color */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: color 0.3s; /* Smooth color transition */
+}
+
+.nav-links li:hover {
+  color: #f31515; /* Change color on hover */
+  text-decoration: underline; /* Underline effect on hover */
+}
+
+/* Main Section Styles */
+.main-section {
+  padding: 80px 20px; /* Padding with extra space for header */
+  background: linear-gradient(135deg, #ffffff, #e0e0e0); /* Gradient background */
+  border-radius: 12px; /* Rounded corners */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15); /* Enhanced shadow for depth */
+  margin: 100px auto; /* Center the section with margin */
+  max-width: 900px; /* Limit the width for better readability */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s; /* Smooth transform effect */
+  opacity: 0; /* Start with hidden opacity */
+  animation: fadeIn 0.8s forwards; /* Fade-in animation */
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.main-section:hover {
+  transform: translateY(-5px); /* Slight lift effect on hover */
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+}
+
+/* Title Styles */
+.main-title {
+  font-size: 36px; /* Larger font size for title */
+  color: #2c3e50; /* Darker color for better readability */
+  margin-bottom: 20px; /* Space below the title */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Subtle text shadow */
+  animation: titleAnimation 1s forwards; /* Title animation */
+}
+
+/* Title Animation */
+@keyframes titleAnimation {
+  0% {
+    transform: translateY(-10px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Subtitle Styles */
+.subtitle {
+  font-size: 20px; /* Subtitle font size */
+  color: #555; /* Medium text color */
+  margin-bottom: 30px; /* Space below subtitle */
+  animation: subtitleAnimation 1s forwards; /* Subtitle animation */
+}
+
+/* Subtitle Animation */
+@keyframes subtitleAnimation {
+  0% {
+    transform: translateY(-10px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Button Container Styles */
+.button-container {
+  margin-top: 30px; /* Increased margin for spacing */
+  display: flex; /* Use flexbox for button alignment */
+  justify-content: center; /* Center the buttons */
+  flex-wrap: wrap;
+
+}

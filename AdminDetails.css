@@ -1,0 +1,29 @@
+/* src/components/AdminDetails.css */
+
+.admin-details-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f5f5f5; /* Light background color */
+  }
+  
+  .admin-details-box {
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    background-color: white; /* White background for the details box */
+    animation: fadeIn 0.5s ease-in-out; /* Animation for the box */
+  }
+  
+  /* Animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
